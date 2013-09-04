@@ -37,12 +37,11 @@ public class Main
         
         System.out.print("Indtast antallet af år siden hunden besøgte os: ");
         newAge = scan.nextLine() + d1.age;
-        System.out.println(d1 + newAge); // fejl det skal ikke være en string 
-        
+           
+        int newAge2 = Integer.parseInt(newAge);   //konvertere til int                             
+        int newAge3 = Integer.valueOf(d1.age);    // konvertere til int          
+                
+        System.out.println(newName + " er " + (newAge2 + newAge3) + " år gammel."); //virker ikke ... ligger 2 strings sammen :S  
                       
-        
-        
-        
-        
-    }
+        }
 }
